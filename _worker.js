@@ -3,7 +3,7 @@ export default {
       let url = new URL(request.url);
       if (url.pathname.startsWith('/')) {
         // 修改下方的example.com为自己的节点ip/域名
-        url.hostname="jouyhua.top";
+        url.hostname="172.64.93.79";
         let new_request=new Request(url,request);
         return fetch(new_request);
       }
